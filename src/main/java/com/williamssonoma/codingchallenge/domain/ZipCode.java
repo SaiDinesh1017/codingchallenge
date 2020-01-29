@@ -6,6 +6,10 @@ import lombok.Setter;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 
+/**
+ * Model for zip code range
+ * @author Sai Dinesh Chandaluri
+ */
 @Getter
 @Setter
 public class ZipCode {

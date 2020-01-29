@@ -13,6 +13,10 @@ import javax.validation.ConstraintViolationException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Custom controller advice to customize the error message thrown during javax constraint validation
+ * @author Sai Dinesh Chandaluri
+ */
 @ControllerAdvice
 public class CustomExceptionHandler extends ResponseEntityExceptionHandler {
     @ExceptionHandler({ ConstraintViolationException.class })

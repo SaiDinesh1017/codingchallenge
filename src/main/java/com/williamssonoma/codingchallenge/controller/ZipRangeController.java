@@ -13,6 +13,8 @@ import javax.validation.Valid;
 import java.util.List;
 
 /**
+ * Controller class is used expose zip ranges end point to get multiple sets of zip code ranges obtained from
+ * multiple sources.
  * @author Sai Dinesh Chandaluri
  */
 @Validated

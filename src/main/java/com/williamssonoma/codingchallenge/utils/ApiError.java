@@ -5,6 +5,10 @@ import org.springframework.http.HttpStatus;
 
 import java.util.List;
 
+/**
+ * API error model is used in response for custom exceptions
+ * @author Sai Dinesh Chandaluri
+ */
 @Getter
 public class ApiError {
 
