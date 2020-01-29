@@ -3,17 +3,19 @@ package com.williamssonoma.codingchallenge.controller;
 import com.williamssonoma.codingchallenge.domain.ZipCode;
 import com.williamssonoma.codingchallenge.exception.InvalidZipCodeRangeException;
 import com.williamssonoma.codingchallenge.service.ZipRangeService;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.validation.Valid;
 import java.util.List;
 
 /**
  * @author Sai Dinesh Chandaluri
  */
+@Validated
 @RestController
 @RequestMapping("/zip/ranges")
 public class ZipRangeController {
@@ -25,7 +27,7 @@ public class ZipRangeController {
     }
 
     @PostMapping
-    public List<ZipCode> zipRanges(@RequestBody List<ZipCode> zipCodeList) throws InvalidZipCodeRangeException {
+    public List<ZipCode> zipRanges(@RequestBody @Valid List<ZipCode> zipCodeList) throws InvalidZipCodeRangeException {
         return zipRangeService.minimumRangesRequired(zipCodeList);
     }
 }
