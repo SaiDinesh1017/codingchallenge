@@ -30,6 +30,6 @@ public class ZipRangeController {
 
     @PostMapping
     public List<ZipCode> zipRanges(@RequestBody @Valid List<ZipCode> zipCodeList) throws InvalidZipCodeRangeException {
-        return zipRangeService.minimumRangesRequired(zipCodeList);
+        return zipRangeService.getMinimumRangesRequired(zipCodeList);
     }
 }

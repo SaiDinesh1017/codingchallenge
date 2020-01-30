@@ -34,7 +34,7 @@ public class ZipRangeService {
      * @param zipCodesList - Input zip code list provided by the source
      * @return minimum zip code ranges
      */
-    public List<ZipCode> minimumRangesRequired(List<ZipCode> zipCodesList) throws InvalidZipCodeRangeException {
+    public List<ZipCode> getMinimumRangesRequired(List<ZipCode> zipCodesList) throws InvalidZipCodeRangeException {
         zipRangeValidator.validateZipCodeRanges(zipCodesList);
         zipCodesList.sort(zipRangeComparator);
         LinkedList<ZipCode> minimumRanges = new LinkedList<>();
