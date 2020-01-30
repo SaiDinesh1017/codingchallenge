@@ -20,21 +20,31 @@ as the input for a given collection of 5-digit ZIP code ranges (each range inclu
 * the lower bound of the zip code range must be less than the upper bound.
 
 ### To build the project 
-* ./gradlew clean build
+```
+./gradlew clean build
+```
 
 ### To obtain the test coverage report of the project
-* ./gradlew clean build jacocoTestReport
-* open index.html in browser from the path ~/codingchallenge/build/jacocoHtml/index.html
+```
+./gradlew clean build jacocoTestReport 
+```
+_open index.html in browser from the path ~/codingchallenge/build/jacocoHtml/index.html_
 
 ### To obtain the bugs report over the project
-* ./gradlew clean build
-* open main.html in browser ~/codingchallenge/build/reports/findbugs/main.html
+``` 
+./gradlew clean build
+```
+_open main.html in browser from the path ~/codingchallenge/build/reports/findbugs/main.html_
 
 ### Steps to run the project
 #### Step 1
-* git clone https://github.com/SaiDinesh1017/codingchallenge.git
+```
+git clone https://github.com/SaiDinesh1017/codingchallenge.git 
+```
 #### Step 2
-*  ./gradlew bootRun
+```
+./gradlew bootRun
+``` 
 
 ### To test the project
 * After running the project as described above. Go to --> [localhost:8080/swagger-ui.html](localhost:8080/swagger-ui.html)
