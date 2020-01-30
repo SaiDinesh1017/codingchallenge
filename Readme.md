@@ -11,6 +11,7 @@ as the input for a given collection of 5-digit ZIP code ranges (each range inclu
 * Swagger for API documentation
 * Jacoco for code coverage metrics
 * Gradle 3.5
+* Embeded Tomcat
 
 ### Assumptions
 * For each range of zip code includes both their upper and lower bounds, the lower bound must be less than the upper bound.
@@ -23,8 +24,9 @@ as the input for a given collection of 5-digit ZIP code ranges (each range inclu
 ```
 ./gradlew clean build
 ```
+**jar**  _codingchallenge-2.0.0-SNAPSHOT.jar will be created_
 
-### To obtain the test coverage report of the project
+### To run test cases and obtain the test coverage report of the project
 ```
 ./gradlew clean build jacocoTestReport 
 ```
